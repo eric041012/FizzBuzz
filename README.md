@@ -43,7 +43,7 @@ The markdown format is commonly used for things like readme files, as they allow
 which allows for basic typesetting when viewed while still being a plaintext format.
 
 Below is a blank checkbox:
-- [ ] Put an X in the [ ] to mark this as done!
+- [X] Put an X in the [ ] to mark this as done!
 
 You can edit this file directly to check off these checkboxes throughout the lab to mark things as done.
 Do so now for the checkbox above.
@@ -87,8 +87,8 @@ Let's explore a solution written in Java.
 class FizzBuzz {
 
     public static void main(String[] args) {
-
-        for (int i = 1; i < 100; i++) {
+        int i = 1;
+        while (i < 100) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
@@ -98,18 +98,22 @@ class FizzBuzz {
             if (divisibleBy3 && divisibleBy5) {
 
                 System.out.println("Fizz Buzz");
+                i++;
 
             } else if (divisibleBy3) {
 
                 System.out.println("Fizz");
+                i++;
 
             } else if (divisibleBy5) {
 
                 System.out.println("Buzz");
+                i++;
 
             } else {
 
                 System.out.println(i);
+                i++;
 
             }
         }
@@ -134,8 +138,11 @@ Take a few minutes to read through this code and take guesses at what different 
 the code are doing. For example, what's the Java version of Python's `and`? What's going
 on with that weird `for` loop? As you do this, you might find it useful to write down your
 own implementation in Python to help you begin to create a mapping between the two languages.
-
-- [ ] Make note of any specific Java syntax which stands out to you and compare what you
+[x]
+- [ According to the code, I was able to observe that symbol && seems to work as function of 'and' in python]
+- [In addition, I can see that for property in java is similar to what it is on python but symbol ';' in java is working as] 
+- [',' in pyhton but in java, you always have to use {} in every condition while you don't have to in pyhton.] 
+- Make note of any specific Java syntax which stands out to you and compare what you
 come up with those around you. Try to come up with a list of at least five things that
 strike you as either similar to or different from Python.
 
@@ -160,7 +167,7 @@ Later in this course, you'll learn what all that mess means, but for now it is e
 
 ### Task 1.1: Rewrite this using `while`
 
-- [ ] You've puzzled through how Java `for` and `if` statements work; now rewrite this
+- [X] You've puzzled through how Java `for` and `if` statements work; now rewrite this
 to use a `while` loop instead of a `for` loop.
 
 ## How to test this code
